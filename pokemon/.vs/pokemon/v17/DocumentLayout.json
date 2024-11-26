@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kilia\\source\\repos\\pokemon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemon\\pokemon\\mvvm\\viewmodel\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\mvvm\\viewmodel\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemon\\pokemon\\mvvm\\view\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\mvvm\\view\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemon\\pokemon\\mvvm\\view\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\mvvm\\view\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemon\\pokemon\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginVM.cs",
+              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\pokemon\\pokemon\\MVVM\\ViewModel\\LoginVM.cs",
+              "RelativeDocumentMoniker": "pokemon\\MVVM\\ViewModel\\LoginVM.cs",
+              "ToolTip": "C:\\Users\\kilia\\source\\repos\\pokemon\\pokemon\\MVVM\\ViewModel\\LoginVM.cs",
+              "RelativeToolTip": "pokemon\\MVVM\\ViewModel\\LoginVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T16:49:36.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\pokemon\\pokemon\\MVVM\\View\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "pokemon\\MVVM\\View\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\kilia\\source\\repos\\pokemon\\pokemon\\MVVM\\View\\Login.xaml.cs",
+              "RelativeToolTip": "pokemon\\MVVM\\View\\Login.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T16:58:19.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\pokemon\\pokemon\\MVVM\\View\\Login.xaml",
+              "RelativeDocumentMoniker": "pokemon\\MVVM\\View\\Login.xaml",
+              "ToolTip": "C:\\Users\\kilia\\source\\repos\\pokemon\\pokemon\\MVVM\\View\\Login.xaml",
+              "RelativeToolTip": "pokemon\\MVVM\\View\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-26T15:19:50.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\pokemon\\pokemon\\App.xaml.cs",
+              "RelativeDocumentMoniker": "pokemon\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\kilia\\source\\repos\\pokemon\\pokemon\\App.xaml.cs",
+              "RelativeToolTip": "pokemon\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T21:20:06.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
