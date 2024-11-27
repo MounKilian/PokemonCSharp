@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CBX0QXkmKLw=",
+  "dgSpecHash": "4N4/9Pa/BBs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kilia\\source\\repos\\pokemon\\pokemon\\pokemon.csproj",
+  "projectFilePath": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\pokemon.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kilia\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\kilia\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

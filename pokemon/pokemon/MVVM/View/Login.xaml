@@ -5,24 +5,23 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:pokemon.MVVM.View"
              xmlns:VM="clr-namespace:pokemon.MVVM.ViewModel"
-             d:DataContext="{d:DesignInstance Type=VM:LoginVM}"
+             d:DataContext="{d:DesignInstance Type=VM:InitViewVM}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
     <Grid Background="#F5F5F5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="300" Width="397">
-        <TextBlock Text="{Binding TitleAndButtonText}" 
+        <TextBlock Text="Login" 
                    FontSize="24" 
                    FontWeight="Bold" 
                    HorizontalAlignment="Center" 
-                   Margin="0,20,0,0" 
-                   MouseLeftButtonUp="ActionText_Click" />
+                   Margin="0,20,0,0" />
 
         <TextBlock Text="Username:" 
                    HorizontalAlignment="Left" 
                    VerticalAlignment="Center" 
                    Margin="50,0,0,100" 
                    FontSize="14" />
-        <TextBox Text="{Binding Username}"
+        <TextBox Text="{Binding Username}" 
                  Name="UsernameTextBox" 
                  HorizontalAlignment="Right" 
                  VerticalAlignment="Center" 
@@ -38,11 +37,11 @@
                      HorizontalAlignment="Right" 
                      VerticalAlignment="Center" 
                      Width="200" 
-                     Margin="0,0,50,40"
+                     Margin="0,0,50,40" 
                      PasswordChanged="PasswordBox_PasswordChanged"/>
 
-        <Button Command="{Binding RequestChangeViewCommand}"
-                Content="{Binding TitleAndButtonText}" 
+        <Button Command="{Binding RequestChangeViewCommand}" 
+                Content="Login"
                 Width="100" 
                 Height="30" 
                 HorizontalAlignment="Center" 

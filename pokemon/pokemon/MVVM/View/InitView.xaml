@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="pokemon.MVVM.View.InitView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:View="clr-namespace:pokemon.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Grid>
+        <TabControl>
+            <TabItem Header="Settings">
+                <View:Settings/>
+            </TabItem>
+
+            <TabItem Header="Login">
+                <View:Login/>
+            </TabItem>
+
+            <TabItem Header="Sign Up">
+                <View:SignIn/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>

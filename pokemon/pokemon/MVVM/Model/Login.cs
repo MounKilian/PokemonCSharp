@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace pokemon.Model;
+﻿namespace pokemon.Model;
 
 public partial class Login
 {

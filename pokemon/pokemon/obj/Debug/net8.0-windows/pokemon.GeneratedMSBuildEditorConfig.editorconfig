@@ -17,6 +17,6 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.MvvmToolkitEnableINotifyPropertyChangingSupport = true
 build_property.RootNamespace = pokemon
-build_property.ProjectDir = C:\Users\kilia\source\repos\pokemon\pokemon\
+build_property.ProjectDir = C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

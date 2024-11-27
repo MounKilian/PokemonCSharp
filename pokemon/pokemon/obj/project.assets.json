@@ -4798,11 +4798,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kilia\\source\\repos\\pokemon\\pokemon\\pokemon.csproj",
+      "projectUniqueName": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\pokemon.csproj",
       "projectName": "pokemon",
-      "projectPath": "C:\\Users\\kilia\\source\\repos\\pokemon\\pokemon\\pokemon.csproj",
+      "projectPath": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\pokemon.csproj",
       "packagesPath": "C:\\Users\\kilia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kilia\\source\\repos\\pokemon\\pokemon\\obj\\",
+      "outputPath": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kilia\\AppData\\Roaming\\NuGet\\NuGet.Config",

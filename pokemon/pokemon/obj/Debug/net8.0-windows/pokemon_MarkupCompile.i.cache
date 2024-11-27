@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\kilia\source\repos\pokemon\pokemon\obj\Debug\net8.0-windows\
+C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\
 pokemon
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\kilia\source\repos\pokemon\pokemon\App.xaml
-71657346102
+C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\App.xaml
+9856237557
 
-21-1863831850
+23378382522
 22959485779
-MainWindow.xaml;MVVM\View\Game.xaml;MVVM\View\Login.xaml;MVVM\View\MainView.xaml;MVVM\View\ManagePokemons.xaml;MVVM\View\ManageSpells.xaml;MVVM\View\Settings.xaml;
+MainWindow.xaml;MVVM\View\Game.xaml;MVVM\View\InitView.xaml;MVVM\View\Login.xaml;MVVM\View\MainView.xaml;MVVM\View\ManagePokemons.xaml;MVVM\View\ManageSpells.xaml;MVVM\View\Settings.xaml;MVVM\View\SignIn.xaml;
 
 False
 

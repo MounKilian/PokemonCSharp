@@ -9,9 +9,6 @@
     
     <Grid>
         <TabControl>
-            <TabItem Header="Settings">
-                <View:Settings/>
-            </TabItem>
             <TabItem Header="Game">
                  <View:Game/>
             </TabItem>

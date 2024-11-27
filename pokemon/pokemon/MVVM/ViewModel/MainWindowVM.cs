@@ -1,14 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Input;
-
-namespace pokemon.MVVM.ViewModel
+﻿namespace pokemon.MVVM.ViewModel
 {
     public class MainWindowVM : BaseVM
     {
@@ -30,16 +20,15 @@ namespace pokemon.MVVM.ViewModel
             }
         }
 
-
-     
         #endregion
 
         public MainWindowVM()
         {
             MainWindowVM.OnRequestVMChange += HandleRequestViewChange;
-            MainWindowVM.OnRequestVMChange?.Invoke(new LoginVM());
-
+            MainWindowVM.OnRequestVMChange?.Invoke(new InitViewVM());
         }
+
+
 
         public void HandleRequestViewChange(BaseVM a_VMToChange)
         {
