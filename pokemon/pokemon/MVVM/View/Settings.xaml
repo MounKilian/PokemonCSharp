@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:pokemon.MVVM.View"
              xmlns:VM="clr-namespace:pokemon.MVVM.ViewModel"
-             d:DataContext="{d:DesignInstance Type=VM:MainViewVM}"
+             d:DataContext="{d:DesignInstance Type=VM:InitViewVM}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
@@ -22,7 +22,8 @@
                    Margin="50,0,0,50" 
                    FontSize="14" />
 
-        <TextBox Name="InputTextBox" 
+        <TextBox Text="{Binding Database}" 
+                 Name="InputTextBox" 
                  HorizontalAlignment="Right" 
                  VerticalAlignment="Center" 
                  Width="200" 
@@ -37,6 +38,6 @@
                 Background="#4CAF50" 
                 Foreground="White" 
                 FontWeight="Bold"
-                Command="{Binding RequestChangeViewCommand}"/>
+                Command="{Binding RequestDatabaseViewCommand}"/>
     </Grid>
 </UserControl>

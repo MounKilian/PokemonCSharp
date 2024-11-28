@@ -12,16 +12,18 @@ namespace pokemon.MVVM.ViewModel
     {
         public ICommand RequestChangeViewCommand { get; set; }
         public ICommand RequestSignInCommand { get; set; }
+        public ICommand RequestDatabaseViewCommand { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
+        public string Database {  get; set; }
 
-        private readonly ExerciceMonsterContext _context;
+        private ExerciceMonsterContext _context;
 
         public InitViewVM()
         {
-            _context = new ExerciceMonsterContext(new DbContextOptions<ExerciceMonsterContext>());
             RequestChangeViewCommand = new RelayCommand(HandleRequestChangeViewCommand);
             RequestSignInCommand = new RelayCommand(HandleRequestSignInCommand);
+            RequestDatabaseViewCommand = new RelayCommand(HandleRequestDatabaseCommand);
         }
 
         public bool InsertUser(string username, string password)
@@ -76,7 +78,7 @@ namespace pokemon.MVVM.ViewModel
         {
             if (ValidateLogin())
             {
-                MainWindowVM.OnRequestVMChange?.Invoke(new MainViewVM());
+                MainWindowVM.OnRequestVMChange?.Invoke(new MainViewVM(_context));
             }
             else
             {
@@ -88,6 +90,19 @@ namespace pokemon.MVVM.ViewModel
         {
             InsertUser(Username, Password);
             MessageBox.Show("L'utilisateur a été ajouté avec succès.", "Succès", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        public void HandleRequestDatabaseCommand()
+        {
+            if (!string.IsNullOrEmpty(Database))
+            {
+                _context = new ExerciceMonsterContext(Database);
+                MessageBox.Show("La connexion à la base de données a été établie avec succès.", "Succès", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
+            {
+                MessageBox.Show("Veuillez entrer une chaîne de connexion valide.", "Erreur", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
         }
     }
 }
