@@ -12,6 +12,8 @@ namespace pokemon.MVVM.ViewModel
         public ExerciceMonsterContext _context { get; set; }
         public ICommand ReturnToMainViewCommand { get; }
 
+        public ICommand ChangeViewCommandSpell { get; set; }
+
         private BitmapImage _imageSource;
         public BitmapImage ImageSource
         {
@@ -20,6 +22,25 @@ namespace pokemon.MVVM.ViewModel
         }
 
         public ObservableCollection<Spell> Spells { get; set; }
+
+        private Spell _selectedSpell;
+        public Spell SelectedSpell
+        {
+            get => _selectedSpell;
+            set
+            {
+                if (_selectedSpell != value)
+                {
+                    _selectedSpell = value;
+                    OnPropertyChanged(nameof(SelectedSpell));
+                    if (_selectedSpell != null)
+                    {
+                        ChangeViewCommandSpell.Execute(null);
+                    }
+                }
+            }
+        }
+
 
         public PokemonDetailsVM(Monster selectedPokemon, ExerciceMonsterContext context)
         {
@@ -30,6 +51,7 @@ namespace pokemon.MVVM.ViewModel
             LoadSpells();
 
             ReturnToMainViewCommand = new RelayCommand(HandleReturnToMainView);
+            ChangeViewCommandSpell = new RelayCommand(HandleRequestChangeViewCommandSpell);
         }
 
         private void HandleReturnToMainView()
@@ -56,6 +78,14 @@ namespace pokemon.MVVM.ViewModel
                 .Where(spell => spell.Monsters.Any(monster => monster.Id == SelectedPokemon.Id))
                 .ToList();
             Spells = new ObservableCollection<Spell>(spells);
+        }
+
+        private void HandleRequestChangeViewCommandSpell()
+        {
+            if (SelectedSpell != null)
+            {
+                MainWindowVM.OnRequestVMChange?.Invoke(new SpellDetailsVM(SelectedSpell, _context));
+            }
         }
     }
 }

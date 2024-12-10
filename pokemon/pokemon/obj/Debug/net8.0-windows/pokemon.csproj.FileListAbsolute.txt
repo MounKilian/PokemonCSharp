@@ -329,3 +329,5 @@ C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windo
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\pokemon.pdb
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\pokemon.genruntimeconfig.cache
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\ref\pokemon.dll
+C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\DamagePopup.baml
+C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\DamagePopup.g.cs

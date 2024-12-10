@@ -32,7 +32,7 @@
                        Foreground="#FF5722" />
 
             <TextBlock Text="Spells:" FontSize="24" FontWeight="Bold" Margin="0,20,0,10" Foreground="#4CAF50"/>
-            <ListBox ItemsSource="{Binding Spells}" BorderThickness="1" BorderBrush="#4CAF50">
+            <ListBox ItemsSource="{Binding Spells}" BorderThickness="1" BorderBrush="#4CAF50" SelectedItem="{Binding SelectedSpell}" >
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Margin="5">

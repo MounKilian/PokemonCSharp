@@ -10,6 +10,9 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="MVVM\View\DamagePopup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MVVM\View\Fight.xaml">
       <SubType>Designer</SubType>
     </Page>
