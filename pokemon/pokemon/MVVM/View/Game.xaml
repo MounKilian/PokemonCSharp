@@ -1,19 +1,91 @@
 ﻿<UserControl x:Class="pokemon.MVVM.View.Game"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:pokemon.MVVM.View"
              xmlns:VM="clr-namespace:pokemon.MVVM.ViewModel"
-             d:DataContext="{d:DesignInstance Type=VM:MainViewVM}" 
-             mc:Ignorable="d" 
+             d:DataContext="{d:DesignInstance Type=VM:MainViewVM}"
+             mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="#F5F5F5" HorizontalAlignment="Center" VerticalAlignment="Center" Height="389" Width="481">
 
-        <TextBlock Text="Game" 
-                   FontSize="24" 
-                   FontWeight="Bold" 
-                   HorizontalAlignment="Center" 
-                   Margin="0,20,0,0" />
+    <UserControl.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Margin" Value="0,0,0,10" />
+        </Style>
+
+        <Style TargetType="ListBox">
+            <Setter Property="Padding" Value="5" />
+            <Setter Property="Margin" Value="0,10,0,10" />
+            <Setter Property="MinHeight" Value="100" />
+            <Setter Property="BorderBrush" Value="Gray" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Background" Value="White" />
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#4CAF50" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Padding" Value="10,5" />
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="BorderBrush" Value="#388E3C" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Margin" Value="0,20,0,0" />
+        </Style>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Margin="10">
+            <TextBlock Text="Available Pokémon" />
+
+            <ListBox ItemsSource="{Binding Pokemons}"
+                     DisplayMemberPath="Name"
+                     SelectedItem="{Binding SelectedPlayerPokemon}"
+                     SelectionMode="Single" />
+
+            <TextBlock Text="Player Selection" />
+
+            <ItemsControl ItemsSource="{Binding PlayerPokemonList}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Margin="10">
+            <TextBlock Text="Available Pokémon" />
+
+            <ListBox ItemsSource="{Binding Pokemons}"
+                     DisplayMemberPath="Name"
+                     SelectedItem="{Binding SelectedEnemyPokemon}"
+                     SelectionMode="Single" />
+
+            <TextBlock Text="Enemy Selection" />
+
+            <ItemsControl ItemsSource="{Binding EnemyPokemonList}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10">
+            <Button Content="Validate Selections"
+                    Command="{Binding ValidateSelectionsCommand}" />
+        </StackPanel>
     </Grid>
+
 </UserControl>

@@ -290,6 +290,7 @@ C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\bin\Debug\net8.0-windo
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\pokemon.csproj.AssemblyReference.cache
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\Fight.g.cs
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\Game.g.cs
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\InitView.g.cs
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\Login.g.cs
@@ -299,11 +300,13 @@ C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windo
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\PokemonDetails.g.cs
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\Settings.g.cs
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\SignIn.g.cs
+C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\SpellDetails.g.cs
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\pokemon_MarkupCompile.cache
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\pokemon_MarkupCompile.lref
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\Fight.baml
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\Game.baml
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\InitView.baml
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\Login.baml
@@ -313,6 +316,7 @@ C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windo
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\PokemonDetails.baml
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\Settings.baml
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\SignIn.baml
+C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\SpellDetails.baml
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\pokemon.g.resources
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\pokemon.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\pokemon.AssemblyInfoInputs.cache

@@ -1,6 +1,7 @@
 ﻿
 
 FC:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\MainWindow.xaml;;
+FC:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\MVVM\View\Fight.xaml;;
 FC:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\MVVM\View\Game.xaml;;
 FC:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\MVVM\View\InitView.xaml;;
 FC:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\MVVM\View\Login.xaml;;
@@ -10,4 +11,5 @@ FC:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\MVVM\View\ManageSpell
 FC:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\MVVM\View\PokemonDetails.xaml;;
 FC:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\MVVM\View\Settings.xaml;;
 FC:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\MVVM\View\SignIn.xaml;;
+FC:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\MVVM\View\SpellDetails.xaml;;
 

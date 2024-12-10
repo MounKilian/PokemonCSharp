@@ -10,6 +10,12 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="MVVM\View\Fight.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\View\SpellDetails.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MVVM\View\PokemonDetails.xaml">
       <SubType>Designer</SubType>
     </Page>

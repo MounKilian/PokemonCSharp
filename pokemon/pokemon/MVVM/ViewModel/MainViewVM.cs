@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.Input;
 using pokemon.Model;
 using System.Collections.ObjectModel;
+using System.Windows;
 using System.Windows.Input;
 
 namespace pokemon.MVVM.ViewModel
@@ -8,6 +9,9 @@ namespace pokemon.MVVM.ViewModel
     public class MainViewVM : BaseVM
     {
         public ICommand ChangeViewCommand { get; set; }
+        public ICommand ChangeViewCommandSpell { get; set; }
+        public ICommand ValidateSelectionsCommand { get; set; }
+
         public ObservableCollection<Monster> Pokemons { get; set; }
         public ObservableCollection<Spell> Spells { get; set; }
 
@@ -17,17 +21,70 @@ namespace pokemon.MVVM.ViewModel
             get => _selectedPokemon;
             set
             {
-                _selectedPokemon = value;
-                OnPropertyChanged(nameof(SelectedPokemon));
-
-                if (_selectedPokemon != null)
+                if (_selectedPokemon != value)
                 {
-                    ChangeViewCommand.Execute(null);
+                    _selectedPokemon = value;
+                    OnPropertyChanged(nameof(SelectedPokemon));
+                    if (_selectedPokemon != null)
+                    {
+                        ChangeViewCommand.Execute(null);
+                    }
+                }
+            }
+        }
+
+        private Spell _selectedSpell;
+        public Spell SelectedSpell
+        {
+            get => _selectedSpell;
+            set
+            {
+                if (_selectedSpell != value)
+                {
+                    _selectedSpell = value;
+                    OnPropertyChanged(nameof(SelectedSpell));
+                    if (_selectedSpell != null)
+                    {
+                        ChangeViewCommandSpell.Execute(null);
+                    }
                 }
             }
         }
 
         private readonly ExerciceMonsterContext _context;
+
+        public ObservableCollection<Monster> PlayerPokemonList { get; set; } = new();
+        public ObservableCollection<Monster> EnemyPokemonList { get; set; } = new();
+
+        private Monster _selectedPlayerPokemon;
+        public Monster SelectedPlayerPokemon
+        {
+            get => _selectedPlayerPokemon;
+            set
+            {
+                if (_selectedPlayerPokemon != value)
+                {
+                    _selectedPlayerPokemon = value;
+                    OnPropertyChanged();
+                    AddToPlayerSelection(value);
+                }
+            }
+        }
+
+        private Monster _selectedEnemyPokemon;
+        public Monster SelectedEnemyPokemon
+        {
+            get => _selectedEnemyPokemon;
+            set
+            {
+                if (_selectedEnemyPokemon != value)
+                {
+                    _selectedEnemyPokemon = value;
+                    OnPropertyChanged();
+                    AddToEnemySelection(value);
+                }
+            }
+        }
 
         public MainViewVM(ExerciceMonsterContext context)
         {
@@ -37,6 +94,8 @@ namespace pokemon.MVVM.ViewModel
             LoadPokemons();
             LoadSpells();
             ChangeViewCommand = new RelayCommand(HandleRequestChangeViewCommand);
+            ChangeViewCommandSpell = new RelayCommand(HandleRequestChangeViewCommandSpell);
+            ValidateSelectionsCommand = new RelayCommand(ValidateSelections);
         }
 
         private void LoadPokemons()
@@ -59,7 +118,54 @@ namespace pokemon.MVVM.ViewModel
 
         private void HandleRequestChangeViewCommand()
         {
-            MainWindowVM.OnRequestVMChange?.Invoke(new PokemonDetailsVM(SelectedPokemon, _context));
+            if (SelectedPokemon != null)
+            {
+                MainWindowVM.OnRequestVMChange?.Invoke(new PokemonDetailsVM(SelectedPokemon, _context));
+            }
+        }
+
+        private void HandleRequestChangeViewCommandSpell()
+        {
+            if (SelectedSpell != null)
+            {
+                MainWindowVM.OnRequestVMChange?.Invoke(new SpellDetailsVM(SelectedSpell, _context));
+            }
+        }
+
+        private void AddToPlayerSelection(Monster selected)
+        {
+            if (selected != null && PlayerPokemonList.Count < 2 && !PlayerPokemonList.Contains(selected))
+            {
+                PlayerPokemonList.Add(selected);
+            }
+            else if (PlayerPokemonList.Contains(selected))
+            {
+                PlayerPokemonList.Remove(selected);
+            }
+        }
+
+        private void AddToEnemySelection(Monster selected)
+        {
+            if (selected != null && EnemyPokemonList.Count < 2 && !EnemyPokemonList.Contains(selected))
+            {
+                EnemyPokemonList.Add(selected);
+            }
+            else if (EnemyPokemonList.Contains(selected))
+            {
+                EnemyPokemonList.Remove(selected);
+            }
+        }
+
+        private void ValidateSelections()
+        {
+            if (PlayerPokemonList.Count == 2 && EnemyPokemonList.Count == 2)
+            {
+                MainWindowVM.OnRequestVMChange?.Invoke(new FightVM(PlayerPokemonList, EnemyPokemonList, _context));
+            }
+            else
+            {
+                MessageBox.Show("Tout le monde doit avoir au moins 2 pokémons");
+            }
         }
     }
 }

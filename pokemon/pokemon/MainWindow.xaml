@@ -21,6 +21,14 @@
         <DataTemplate DataType="{x:Type VM:PokemonDetailsVM}">
             <View:PokemonDetails/>
         </DataTemplate>
+
+        <DataTemplate DataType="{x:Type VM:SpellDetailsVM}">
+            <View:SpellDetails/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type VM:FightVM}">
+            <View:Fight/>
+        </DataTemplate>
     </Window.Resources>
 
     <Grid>

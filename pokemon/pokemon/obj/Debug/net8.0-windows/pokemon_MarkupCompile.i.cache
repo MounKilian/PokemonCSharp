@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\App.xaml
-10618153725
+12-1634437098
 
-25-858927800
+29-2035730758
 22959485779
-MainWindow.xaml;MVVM\View\Game.xaml;MVVM\View\InitView.xaml;MVVM\View\Login.xaml;MVVM\View\MainView.xaml;MVVM\View\ManagePokemons.xaml;MVVM\View\ManageSpells.xaml;MVVM\View\PokemonDetails.xaml;MVVM\View\Settings.xaml;MVVM\View\SignIn.xaml;
+MainWindow.xaml;MVVM\View\Fight.xaml;MVVM\View\Game.xaml;MVVM\View\InitView.xaml;MVVM\View\Login.xaml;MVVM\View\MainView.xaml;MVVM\View\ManagePokemons.xaml;MVVM\View\ManageSpells.xaml;MVVM\View\PokemonDetails.xaml;MVVM\View\Settings.xaml;MVVM\View\SignIn.xaml;MVVM\View\SpellDetails.xaml;
 
-False
+True
 

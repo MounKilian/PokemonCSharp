@@ -11,6 +11,8 @@ public partial class Monster
 
     public int Health { get; set; }
 
+    public string? ImageURL { get; set; }
+
     public virtual ICollection<Player> Players { get; set; } = new List<Player>();
 
     public virtual ICollection<Spell> Spells { get; set; } = new List<Spell>();
