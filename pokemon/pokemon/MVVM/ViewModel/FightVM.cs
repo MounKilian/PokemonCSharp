@@ -12,6 +12,8 @@ namespace pokemon.MVVM.ViewModel
 
         private bool _isPlayerTurn;
         private bool _isFirstEnemyDied;
+        public int EnemyScore { get; set; }
+        public int PlayerScore { get; set; }
         private Monster _selectedPlayerPokemon;
         private Monster _selectedEnemyPokemon;
         public int HealthMaxPlayer { get; set; }
@@ -52,7 +54,6 @@ namespace pokemon.MVVM.ViewModel
         public ObservableCollection<Monster> PlayerPokemonList { get; set; }
         public ObservableCollection<Monster> EnemyPokemonList { get; set; }
         public ObservableCollection<Spell> Spells { get; private set; }
-
         public RelayCommand<Spell> AttackCommand { get; set; }
         public RelayCommand<Monster> ChangePokemonCommand { get; set; }
 
@@ -60,6 +61,8 @@ namespace pokemon.MVVM.ViewModel
         {
             _context = context;
             _isFirstEnemyDied = false;
+            PlayerScore = 0;
+            EnemyScore = 0;
 
             PlayerPokemonList = new ObservableCollection<Monster>(playerPokemonList?.Select(pokemon => ClonePokemon(pokemon)) ?? new List<Monster>());
             EnemyPokemonList = new ObservableCollection<Monster>(enemyPokemonList?.Select(pokemon => ClonePokemon(pokemon)) ?? new List<Monster>());
@@ -122,6 +125,9 @@ namespace pokemon.MVVM.ViewModel
             {
                 _isFirstEnemyDied = true;
                 EnemyPokemonList.Remove(SelectedEnemyPokemon);
+           
+                PlayerScore += 1;
+                OnPropertyChanged(nameof(PlayerScore));
 
                 if (EnemyPokemonList.Any())
                 {
@@ -191,6 +197,10 @@ namespace pokemon.MVVM.ViewModel
                 if (SelectedPlayerPokemon.Health <= 0)
                 {
                     PlayerPokemonList.Remove(SelectedPlayerPokemon);
+
+                    EnemyScore += 1;
+                    OnPropertyChanged(nameof(EnemyScore));
+
 
                     if (PlayerPokemonList.Any())
                     {
