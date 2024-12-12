@@ -10,21 +10,18 @@
              d:DesignHeight="500" d:DesignWidth="800">
     <Grid Background="#f0f0f0">
         <StackPanel Margin="82,66,464,74">
-
-            <Border BorderBrush="Red" BorderThickness="4" Padding="10" Background="White" CornerRadius="10">
+            <Border BorderBrush="Red" BorderThickness="4" Padding="10" Background="White" CornerRadius="10" HorizontalAlignment="Center">
                 <Image x:Name="imageControl" 
                        HorizontalAlignment="Center" 
                        VerticalAlignment="Center" 
-                       Width="250" Height="250" 
-                       Source="{Binding ImageSource}" 
-                       Stretch="UniformToFill"/>
+                       Height="250" 
+                       Source="{Binding ImageSource}"/>
             </Border>
 
             <TextBlock Text="{Binding SelectedPokemon.Name}" 
                        FontSize="32" 
                        FontWeight="Bold" 
-                       HorizontalAlignment="Center" 
-                       Width="271" />
+                       HorizontalAlignment="Center"/>
 
             <TextBlock Text="{Binding SelectedPokemon.Health}" 
                        FontSize="20" 
@@ -33,7 +30,7 @@
 
         <StackPanel Margin="400,66,74,74">
             <TextBlock Text="Spells:" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
-            
+
             <ListBox ItemsSource="{Binding Spells}" BorderThickness="1" SelectedItem="{Binding SelectedSpell}" HorizontalAlignment="Center" >
                 <ListBox.ItemTemplate>
                     <DataTemplate>
@@ -48,13 +45,13 @@
         <Button Content="Retour" 
                 Command="{Binding ReturnToMainViewCommand}" 
                 HorizontalAlignment="Center" 
-                VerticalAlignment="Bottom" 
+                VerticalAlignment="Top" 
                 Width="150" 
-                Margin="10" 
+                Margin="0,426,0,0" 
                 Padding="10,5"
                 Foreground="White"
                 FontWeight="Bold"
                 BorderThickness="2" 
-                HorizontalContentAlignment="Center"/>
+                HorizontalContentAlignment="Center" RenderTransformOrigin="0.44,-2.125"/>
     </Grid>
 </UserControl>

@@ -29,6 +29,14 @@
         <DataTemplate DataType="{x:Type VM:FightVM}">
             <View:Fight/>
         </DataTemplate>
+
+        <DataTemplate DataType="{x:Type VM:LoseVM}">
+            <View:Lose/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type VM:WinVM}">
+            <View:Win/>
+        </DataTemplate>
     </Window.Resources>
 
     <Grid>

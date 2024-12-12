@@ -3,6 +3,7 @@ using pokemon.Model;
 using pokemon.View;
 using System.Collections.ObjectModel;
 using System.Windows;
+using System.Windows.Input;
 
 namespace pokemon.MVVM.ViewModel
 {
@@ -14,8 +15,10 @@ namespace pokemon.MVVM.ViewModel
         private bool _isFirstEnemyDied;
         public int EnemyScore { get; set; }
         public int PlayerScore { get; set; }
+
         private Monster _selectedPlayerPokemon;
         private Monster _selectedEnemyPokemon;
+
         public int HealthMaxPlayer { get; set; }
         public int HealthMaxEnnemy { get; set; }
 
@@ -53,6 +56,8 @@ namespace pokemon.MVVM.ViewModel
 
         public ObservableCollection<Monster> PlayerPokemonList { get; set; }
         public ObservableCollection<Monster> EnemyPokemonList { get; set; }
+        private ObservableCollection<Monster> PlayerPokemonListMemory { get; set; }
+        private ObservableCollection<Monster> EnemyPokemonListMemory { get; set; }
         public ObservableCollection<Spell> Spells { get; private set; }
         public RelayCommand<Spell> AttackCommand { get; set; }
         public RelayCommand<Monster> ChangePokemonCommand { get; set; }
@@ -66,6 +71,8 @@ namespace pokemon.MVVM.ViewModel
 
             PlayerPokemonList = new ObservableCollection<Monster>(playerPokemonList?.Select(pokemon => ClonePokemon(pokemon)) ?? new List<Monster>());
             EnemyPokemonList = new ObservableCollection<Monster>(enemyPokemonList?.Select(pokemon => ClonePokemon(pokemon)) ?? new List<Monster>());
+            PlayerPokemonListMemory = new ObservableCollection<Monster>(playerPokemonList?.Select(pokemon => ClonePokemon(pokemon)) ?? new List<Monster>());
+            EnemyPokemonListMemory = new ObservableCollection<Monster>(enemyPokemonList?.Select(pokemon => ClonePokemon(pokemon)) ?? new List<Monster>());
 
             SelectedPlayerPokemon = PlayerPokemonList.FirstOrDefault();
             SelectedEnemyPokemon = EnemyPokemonList.FirstOrDefault();
@@ -79,7 +86,7 @@ namespace pokemon.MVVM.ViewModel
             _isPlayerTurn = true;
 
             AttackCommand = new RelayCommand<Spell>(ExecuteAttack, CanExecuteAttack);
-            ChangePokemonCommand = new RelayCommand<Monster>(ChangePlayerPokemon);
+            ChangePokemonCommand = new RelayCommand<Monster>(ChangePlayerPokemon, CanChangeMonster);
         }
 
         private Monster ClonePokemon(Monster original)
@@ -113,6 +120,7 @@ namespace pokemon.MVVM.ViewModel
 
             _isPlayerTurn = false;
             AttackCommand.NotifyCanExecuteChanged();
+            ChangePokemonCommand.NotifyCanExecuteChanged();
 
             SelectedEnemyPokemon.Health -= selectedSpell.Damage;
             if (SelectedEnemyPokemon.Health <= 0)
@@ -140,43 +148,48 @@ namespace pokemon.MVVM.ViewModel
                     OnPropertyChanged(nameof(HealthMaxEnnemy));
                     OnPropertyChanged(nameof(SelectedEnemyPokemon));
                 }
-                else
-                {
-                    MessageBox.Show("Vous avez gagné ! Tous les Pokémon ennemis ont été battus.");
-                    return;
-                }
             }
 
-            var popup = new DamagePopup(selectedSpell.Name, selectedSpell.Damage);
+            var popup = new DamagePopup(SelectedPlayerPokemon.Name, selectedSpell.Name, selectedSpell.Damage);
             popup.Show();
             await Task.Delay(1000);
             popup.Close();
 
-            if (SelectedEnemyPokemon != null)
+            if (!PlayerPokemonList.Any())
+            {
+                await Task.Delay(1000);
+                MainWindowVM.OnRequestVMChange?.Invoke(new LoseVM(_context, PlayerPokemonListMemory, EnemyPokemonListMemory));
+            }
+            else if (!EnemyPokemonList.Any())
+            {
+                await Task.Delay(1000);
+                MainWindowVM.OnRequestVMChange?.Invoke(new WinVM(_context, PlayerPokemonListMemory, EnemyPokemonListMemory));
+            }
+            else if (SelectedEnemyPokemon != null)
             {
                 EnemyAttack();
                 await Task.Delay(1000);
             }
 
-            if (!PlayerPokemonList.Any())
-            {
-                MessageBox.Show("Vous avez perdu ! Aucun Pokémon restant.");
-                return;
-            }
-
             _isPlayerTurn = true;
             AttackCommand.NotifyCanExecuteChanged();
+            ChangePokemonCommand.NotifyCanExecuteChanged();
         }
 
         private bool CanExecuteAttack(Spell selectedSpell) => _isPlayerTurn;
+        private bool CanChangeMonster(Monster selectMonster) => _isPlayerTurn;
 
         private async void EnemyAttack()
         {
             if (SelectedEnemyPokemon == null || SelectedPlayerPokemon == null) return;
 
-            var enemySpell = _context.Spells
-                .Where(spell => spell.Monsters.Any(monster => monster.Id == SelectedEnemyPokemon.Id))
-                .FirstOrDefault();
+            Random rnd = new();
+
+            var enemySpellArray = _context.Spells
+                .Where(spell => spell.Monsters.Any(monster => monster.Id == SelectedEnemyPokemon.Id)).ToArray();
+
+            int index = rnd.Next(enemySpellArray.Length);
+            var enemySpell = enemySpellArray[index];
 
             if (enemySpell != null)
             {
@@ -198,7 +211,7 @@ namespace pokemon.MVVM.ViewModel
                 }
                 OnPropertyChanged(nameof(SelectedPlayerPokemon));
 
-                var popup = new DamagePopup(enemySpell.Name, ennemyDammage);
+                var popup = new DamagePopup(SelectedEnemyPokemon.Name, enemySpell.Name, ennemyDammage);
                 popup.Show();
                 await Task.Delay(1000);
                 popup.Close();
@@ -219,8 +232,8 @@ namespace pokemon.MVVM.ViewModel
                     }
                     else
                     {
-                        MessageBox.Show("Vous avez perdu ! Aucun Pokémon restant.");
-                        return;
+                        await Task.Delay(1000);
+                        MainWindowVM.OnRequestVMChange?.Invoke(new LoseVM(_context, PlayerPokemonListMemory, EnemyPokemonListMemory));
                     }
                 }
             }

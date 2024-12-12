@@ -14,7 +14,7 @@
                    FontSize="32" 
                    FontWeight="Bold" 
                    HorizontalAlignment="Center" 
-                   Margin="0,50,0,388" Width="780">
+                   Margin="0,50,0,388">
         </TextBlock>
 
         <TextBlock Text="{Binding SelectedSpell.Description}" 
@@ -22,12 +22,13 @@
                    HorizontalAlignment="Center" 
                    Foreground="#333333" 
                    Margin="0,133,0,298" 
-                   TextWrapping="Wrap" Width="780"/>
+                   TextWrapping="Wrap"/>
 
         <TextBlock Text="{Binding SelectedSpell.Damage}" 
                    FontSize="24" 
                    HorizontalAlignment="Center" 
-                   Margin="0,216,0,216" Width="780"/>
+                   Margin="0,216,0,216"
+                   TextWrapping="Wrap"/>
 
         <Button Content="Retour" 
                 Command="{Binding ReturnToMainViewCommand}" 

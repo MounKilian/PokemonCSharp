@@ -30,7 +30,7 @@
                 <Image Source="{Binding SelectedPlayerPokemon.ImageURL}" Width="120" Height="120" Margin="0,0,0,10"/>
                 <TextBlock Text="{Binding SelectedPlayerPokemon.Name}" FontSize="18" HorizontalAlignment="Center" Margin="0,0,0,10"/>
                 <ProgressBar Value="{Binding SelectedPlayerPokemon.Health}" Maximum="{Binding HealthMaxPlayer}"
-                              Height="20" Width="150" Foreground="Green" Margin="0,0,0,10"/>
+                              Height="20" Width="150" Foreground="Green" Background="#8032CD32" BorderBrush="#8032CD32" Margin="0,0,0,10"/>
                 <TextBlock Text="{Binding SelectedPlayerPokemon.Health}" HorizontalAlignment="Center" Margin="0,0,0,10"/>
             </StackPanel>
 
