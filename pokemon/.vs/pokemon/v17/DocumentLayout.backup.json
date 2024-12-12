@@ -3,12 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemoncsharp\\pokemon\\pokemon\\mvvm\\view\\fight.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\mvvm\\view\\fight.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemoncsharp\\pokemon\\pokemon\\mvvm\\view\\pokemondetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\mvvm\\view\\pokemondetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemoncsharp\\pokemon\\pokemon\\mvvm\\view\\managepokemons.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\mvvm\\view\\managepokemons.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemoncsharp\\pokemon\\pokemon\\mvvm\\view\\spelldetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\mvvm\\view\\spelldetails.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemoncsharp\\pokemon\\pokemon\\mvvm\\view\\game.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\mvvm\\view\\game.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemoncsharp\\pokemon\\pokemon\\mvvm\\view\\managespells.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\mvvm\\view\\managespells.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemoncsharp\\pokemon\\pokemon\\mvvm\\view\\initview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\mvvm\\view\\initview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemoncsharp\\pokemon\\pokemon\\mvvm\\view\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\mvvm\\view\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemoncsharp\\pokemon\\pokemon\\mvvm\\view\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\mvvm\\view\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemoncsharp\\pokemon\\pokemon\\mvvm\\view\\signin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\mvvm\\view\\signin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemoncsharp\\pokemon\\pokemon\\mvvm\\viewmodel\\fightvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\mvvm\\viewmodel\\fightvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemoncsharp\\pokemon\\pokemon\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|c:\\users\\kilia\\source\\repos\\pokemoncsharp\\pokemon\\pokemon\\mvvm\\viewmodel\\mainviewvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EEE4721-FE17-41A8-BE4D-D8A30C98C256}|pokemon\\pokemon.csproj|solutionrelative:pokemon\\mvvm\\viewmodel\\mainviewvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,40 +58,161 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Fight.xaml",
-              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\Fight.xaml",
-              "RelativeDocumentMoniker": "pokemon\\MVVM\\View\\Fight.xaml",
-              "ToolTip": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\Fight.xaml",
-              "RelativeToolTip": "pokemon\\MVVM\\View\\Fight.xaml",
+              "Title": "PokemonDetails.xaml",
+              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\PokemonDetails.xaml",
+              "RelativeDocumentMoniker": "pokemon\\MVVM\\View\\PokemonDetails.xaml",
+              "ToolTip": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\PokemonDetails.xaml",
+              "RelativeToolTip": "pokemon\\MVVM\\View\\PokemonDetails.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-10T22:58:34.277Z",
+              "WhenOpened": "2024-12-12T16:41:06.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Game.xaml",
+              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\Game.xaml",
+              "RelativeDocumentMoniker": "pokemon\\MVVM\\View\\Game.xaml",
+              "ToolTip": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\Game.xaml",
+              "RelativeToolTip": "pokemon\\MVVM\\View\\Game.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-12T16:27:28.613Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ManagePokemons.xaml",
+              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\ManagePokemons.xaml",
+              "RelativeDocumentMoniker": "pokemon\\MVVM\\View\\ManagePokemons.xaml",
+              "ToolTip": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\ManagePokemons.xaml",
+              "RelativeToolTip": "pokemon\\MVVM\\View\\ManagePokemons.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-12T16:19:45.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SpellDetails.xaml",
+              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\SpellDetails.xaml",
+              "RelativeDocumentMoniker": "pokemon\\MVVM\\View\\SpellDetails.xaml",
+              "ToolTip": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\SpellDetails.xaml",
+              "RelativeToolTip": "pokemon\\MVVM\\View\\SpellDetails.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-12T16:37:40.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InitView.xaml",
+              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\InitView.xaml",
+              "RelativeDocumentMoniker": "pokemon\\MVVM\\View\\InitView.xaml",
+              "ToolTip": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\InitView.xaml",
+              "RelativeToolTip": "pokemon\\MVVM\\View\\InitView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-12T16:06:01.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ManageSpells.xaml",
+              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\ManageSpells.xaml",
+              "RelativeDocumentMoniker": "pokemon\\MVVM\\View\\ManageSpells.xaml",
+              "ToolTip": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\ManageSpells.xaml",
+              "RelativeToolTip": "pokemon\\MVVM\\View\\ManageSpells.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-12T14:21:19.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\Login.xaml",
+              "RelativeDocumentMoniker": "pokemon\\MVVM\\View\\Login.xaml",
+              "ToolTip": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\Login.xaml",
+              "RelativeToolTip": "pokemon\\MVVM\\View\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-12T16:16:33.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SignIn.xaml",
+              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\SignIn.xaml",
+              "RelativeDocumentMoniker": "pokemon\\MVVM\\View\\SignIn.xaml",
+              "ToolTip": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\SignIn.xaml",
+              "RelativeToolTip": "pokemon\\MVVM\\View\\SignIn.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-12T16:17:02.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Settings.xaml",
+              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\Settings.xaml",
+              "RelativeDocumentMoniker": "pokemon\\MVVM\\View\\Settings.xaml",
+              "ToolTip": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\View\\Settings.xaml",
+              "RelativeToolTip": "pokemon\\MVVM\\View\\Settings.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-12T16:17:01.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "FightVM.cs",
               "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\ViewModel\\FightVM.cs",
               "RelativeDocumentMoniker": "pokemon\\MVVM\\ViewModel\\FightVM.cs",
               "ToolTip": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\ViewModel\\FightVM.cs",
               "RelativeToolTip": "pokemon\\MVVM\\ViewModel\\FightVM.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAAwMsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAALEAAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T22:17:37.056Z",
+              "WhenOpened": "2024-12-12T14:29:03.631Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\App.xaml",
+              "RelativeDocumentMoniker": "pokemon\\App.xaml",
+              "ToolTip": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\App.xaml",
+              "RelativeToolTip": "pokemon\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-12T16:04:47.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainViewVM.cs",
+              "DocumentMoniker": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\ViewModel\\MainViewVM.cs",
+              "RelativeDocumentMoniker": "pokemon\\MVVM\\ViewModel\\MainViewVM.cs",
+              "ToolTip": "C:\\Users\\kilia\\source\\repos\\PokemonCSharp\\pokemon\\pokemon\\MVVM\\ViewModel\\MainViewVM.cs",
+              "RelativeToolTip": "pokemon\\MVVM\\ViewModel\\MainViewVM.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAIA6wJwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T14:21:43.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

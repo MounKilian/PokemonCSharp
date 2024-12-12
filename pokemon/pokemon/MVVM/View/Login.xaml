@@ -47,7 +47,6 @@
                 HorizontalAlignment="Center" 
                 VerticalAlignment="Bottom" 
                 Margin="0,20,0,20" 
-                Background="#4CAF50" 
                 Foreground="White" 
                 FontWeight="Bold"/>
     </Grid>

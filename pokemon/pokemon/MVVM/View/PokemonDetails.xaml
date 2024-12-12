@@ -9,9 +9,9 @@
              mc:Ignorable="d"
              d:DesignHeight="500" d:DesignWidth="800">
     <Grid Background="#f0f0f0">
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Margin="82,66,464,74">
 
-            <Border BorderBrush="#4CAF50" BorderThickness="4" Padding="10" Background="White" CornerRadius="10">
+            <Border BorderBrush="Red" BorderThickness="4" Padding="10" Background="White" CornerRadius="10">
                 <Image x:Name="imageControl" 
                        HorizontalAlignment="Center" 
                        VerticalAlignment="Center" 
@@ -24,37 +24,37 @@
                        FontSize="32" 
                        FontWeight="Bold" 
                        HorizontalAlignment="Center" 
-                       Foreground="#4CAF50" />
+                       Width="271" />
 
             <TextBlock Text="{Binding SelectedPokemon.Health}" 
                        FontSize="20" 
-                       HorizontalAlignment="Center" 
-                       Foreground="#FF5722" />
+                       HorizontalAlignment="Center"/>
+        </StackPanel>
 
-            <TextBlock Text="Spells:" FontSize="24" FontWeight="Bold" Margin="0,20,0,10" Foreground="#4CAF50"/>
-            <ListBox ItemsSource="{Binding Spells}" BorderThickness="1" BorderBrush="#4CAF50" SelectedItem="{Binding SelectedSpell}" >
+        <StackPanel Margin="400,66,74,74">
+            <TextBlock Text="Spells:" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center"/>
+            
+            <ListBox ItemsSource="{Binding Spells}" BorderThickness="1" SelectedItem="{Binding SelectedSpell}" HorizontalAlignment="Center" >
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Margin="5">
-                            <TextBlock Text="{Binding Name}" FontSize="18" Margin="5,0" Foreground="#FF5722"/>
+                            <TextBlock Text="{Binding Name}" FontSize="18" Margin="5,0"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-
-            <Button Content="Retour" 
-                    Command="{Binding ReturnToMainViewCommand}" 
-                    HorizontalAlignment="Center" 
-                    VerticalAlignment="Bottom" 
-                    Width="150" 
-                    Margin="10" 
-                    Padding="10,5"
-                    Background="#4CAF50" 
-                    Foreground="White"
-                    FontWeight="Bold"
-                    BorderBrush="#388E3C"
-                    BorderThickness="2" 
-                    HorizontalContentAlignment="Center"/>
         </StackPanel>
+
+        <Button Content="Retour" 
+                Command="{Binding ReturnToMainViewCommand}" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Bottom" 
+                Width="150" 
+                Margin="10" 
+                Padding="10,5"
+                Foreground="White"
+                FontWeight="Bold"
+                BorderThickness="2" 
+                HorizontalContentAlignment="Center"/>
     </Grid>
 </UserControl>

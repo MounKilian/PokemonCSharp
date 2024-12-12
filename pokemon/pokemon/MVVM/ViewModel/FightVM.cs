@@ -155,6 +155,7 @@ namespace pokemon.MVVM.ViewModel
             if (SelectedEnemyPokemon != null)
             {
                 EnemyAttack();
+                await Task.Delay(1000);
             }
 
             if (!PlayerPokemonList.Any())
@@ -169,7 +170,7 @@ namespace pokemon.MVVM.ViewModel
 
         private bool CanExecuteAttack(Spell selectedSpell) => _isPlayerTurn;
 
-        private void EnemyAttack()
+        private async void EnemyAttack()
         {
             if (SelectedEnemyPokemon == null || SelectedPlayerPokemon == null) return;
 
@@ -179,13 +180,16 @@ namespace pokemon.MVVM.ViewModel
 
             if (enemySpell != null)
             {
+                int ennemyDammage;
                 if (_isFirstEnemyDied)
                 {
-                    SelectedPlayerPokemon.Health -= (int)(enemySpell.Damage * 1.05);
+                    ennemyDammage = (int)(enemySpell.Damage * 1.05);
+                    SelectedPlayerPokemon.Health -= ennemyDammage;
                 }
                 else
                 {
-                    SelectedPlayerPokemon.Health -= enemySpell.Damage;
+                    ennemyDammage = enemySpell.Damage;
+                    SelectedPlayerPokemon.Health -= ennemyDammage;
                 }
 
                 if (SelectedPlayerPokemon.Health <= 0)
@@ -194,13 +198,17 @@ namespace pokemon.MVVM.ViewModel
                 }
                 OnPropertyChanged(nameof(SelectedPlayerPokemon));
 
+                var popup = new DamagePopup(enemySpell.Name, ennemyDammage);
+                popup.Show();
+                await Task.Delay(1000);
+                popup.Close();
+
                 if (SelectedPlayerPokemon.Health <= 0)
                 {
                     PlayerPokemonList.Remove(SelectedPlayerPokemon);
 
                     EnemyScore += 1;
                     OnPropertyChanged(nameof(EnemyScore));
-
 
                     if (PlayerPokemonList.Any())
                     {

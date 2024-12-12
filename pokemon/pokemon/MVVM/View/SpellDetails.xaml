@@ -14,33 +14,30 @@
                    FontSize="32" 
                    FontWeight="Bold" 
                    HorizontalAlignment="Center" 
-                   Foreground="#4CAF50" 
-                   Margin="0,20,0,0"/>
+                   Margin="0,50,0,388" Width="780">
+        </TextBlock>
 
         <TextBlock Text="{Binding SelectedSpell.Description}" 
                    FontSize="20" 
                    HorizontalAlignment="Center" 
                    Foreground="#333333" 
-                   Margin="0,60,0,0" 
-                   TextWrapping="Wrap"/>
+                   Margin="0,133,0,298" 
+                   TextWrapping="Wrap" Width="780"/>
 
         <TextBlock Text="{Binding SelectedSpell.Damage}" 
                    FontSize="24" 
                    HorizontalAlignment="Center" 
-                   Foreground="#FF5722" 
-                   Margin="0,120,0,0"/>
+                   Margin="0,216,0,216" Width="780"/>
 
         <Button Content="Retour" 
                 Command="{Binding ReturnToMainViewCommand}" 
                 HorizontalAlignment="Center" 
-                VerticalAlignment="Bottom" 
+                VerticalAlignment="Top" 
                 Width="150" 
-                Margin="10" 
+                Margin="0,326,0,0" 
                 Padding="10,5"
-                Background="#4CAF50" 
                 Foreground="White"
                 FontWeight="Bold"
-                BorderBrush="#388E3C"
                 BorderThickness="2" 
                 HorizontalContentAlignment="Center" />
     </Grid>

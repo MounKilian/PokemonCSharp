@@ -18,7 +18,7 @@
 
         <ListBox ItemsSource="{Binding Pokemons}" 
                  SelectedItem="{Binding SelectedPokemon}" 
-                 DisplayMemberPath="Name" />    
+                 DisplayMemberPath="Name" Margin="10,63,10,10" />    
 
     </Grid>
 </UserControl>

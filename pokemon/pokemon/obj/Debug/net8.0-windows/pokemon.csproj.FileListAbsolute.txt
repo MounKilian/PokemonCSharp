@@ -331,3 +331,10 @@ C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windo
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\ref\pokemon.dll
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\DamagePopup.baml
 C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\MVVM\View\DamagePopup.g.cs
+C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\bin\Debug\net8.0-windows\Dynamitey.dll
+C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\bin\Debug\net8.0-windows\ExtendedWPFConverters.dll
+C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\bin\Debug\net8.0-windows\ExtendedWPFVisualTreeHelper.dll
+C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\bin\Debug\net8.0-windows\MaterialDesignColors.dll
+C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.AddOns.dll
+C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\bin\Debug\net8.0-windows\MaterialDesignThemes.Wpf.dll
+C:\Users\kilia\source\repos\PokemonCSharp\pokemon\pokemon\obj\Debug\net8.0-windows\App.baml

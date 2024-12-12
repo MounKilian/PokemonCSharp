@@ -51,6 +51,32 @@ namespace pokemon.MVVM.ViewModel
             }
         }
 
+        private Monster _selectedPokemonForFilter;
+        public Monster SelectedPokemonForFilter
+        {
+            get => _selectedPokemonForFilter;
+            set
+            {
+                if (_selectedPokemonForFilter != value)
+                {
+                    _selectedPokemonForFilter = value;
+                    OnPropertyChanged(nameof(SelectedPokemonForFilter));
+                    UpdateFilteredSpells();
+                }
+            }
+        }
+
+        private ObservableCollection<Spell> _filteredSpells;
+        public ObservableCollection<Spell> FilteredSpells
+        {
+            get => _filteredSpells;
+            set
+            {
+                _filteredSpells = value;
+                OnPropertyChanged(nameof(FilteredSpells));
+            }
+        }
+
         private readonly ExerciceMonsterContext _context;
 
         public ObservableCollection<Monster> PlayerPokemonList { get; set; } = new();
@@ -91,6 +117,7 @@ namespace pokemon.MVVM.ViewModel
             _context = context;
             Pokemons = new ObservableCollection<Monster>();
             Spells = new ObservableCollection<Spell>();
+            FilteredSpells = new ObservableCollection<Spell>();
             LoadPokemons();
             LoadSpells();
             ChangeViewCommand = new RelayCommand(HandleRequestChangeViewCommand);
@@ -113,6 +140,19 @@ namespace pokemon.MVVM.ViewModel
             foreach (var spell in spells)
             {
                 Spells.Add(spell);
+            }
+            FilteredSpells = new ObservableCollection<Spell>(Spells);
+        }
+
+        private void UpdateFilteredSpells()
+        {
+            if (SelectedPokemonForFilter != null)
+            {
+                FilteredSpells = new ObservableCollection<Spell>(_context.Spells.Where(spell => spell.Monsters.Any(monster => monster.Id == SelectedPokemonForFilter.Id)));
+            }
+            else
+            {
+                FilteredSpells = new ObservableCollection<Spell>(Spells);
             }
         }
 
