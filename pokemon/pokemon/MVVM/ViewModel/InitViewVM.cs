@@ -1,5 +1,4 @@
 ﻿using CommunityToolkit.Mvvm.Input;
-using Microsoft.EntityFrameworkCore;
 using pokemon.Model;
 using System.Security.Cryptography;
 using System.Text;
