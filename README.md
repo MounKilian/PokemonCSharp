@@ -1,4 +1,4 @@
-# GroupieTracker 🪢
+# Pokémon 🪢
 
 Welcome to Pokémon C# ! This project is an application based on pokemon fight.
 
